@@ -35,36 +35,40 @@ You can install the necessary packages using pip:
 
 ```bash
 pip install tensorflow numpy matplotlib scikit-image keras
-
+```
 Dataset
 The project uses the COCO dataset for training. You need to download and preprocess the dataset before training the model.
 
 Running the Code
 Clone the repository:
 
-bash
+```bash
 Copy code
 git clone https://github.com/SarahPendhari/ColorVisionGAN
 cd colorization-gan
+```
 Preprocess the dataset:
 
 Use the provided script to preprocess images from the COCO dataset and save them in the desired format.
 
 Train the GAN:
-
+```bash
 Run the training script:
+```
 
-bash
 Copy code
+```bash
 python train.py
+```
 Generate Colorized Images:
 
 Use the trained model to generate colorized images from grayscale inputs:
 
-bash
+```bash
 Copy code
 python generate.py
-Model Architecture
+```
+## Model Architecture
 The project utilizes a basic GAN structure comprising:
 
 Generator: Generates color images from grayscale inputs.
@@ -90,7 +94,7 @@ Sample Outputs: Visual comparison of generated colorized images versus grayscale
 Loss Curves: Plots showing the evolution of generator and discriminator losses over epochs.
 Example Output
 
-Metrics
+## Metrics
 The model's performance is assessed using various metrics:
 
 FID Score: Measures the distance between the distributions of real and generated images.
@@ -102,5 +106,5 @@ Expand Dataset: Use more diverse datasets for training to enhance model robustne
 Acknowledgements
 COCO Dataset for providing the dataset.
 TensorFlow and Keras for the deep learning frameworks used.
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
